@@ -7,8 +7,8 @@
 <div class="row">
 
     <div class="col-md-6 col-md-offset-3">
-<h1>All Weapons</h1>
-        <table class="table">
+        <h1>All Weapons</h1>
+        <table class="table table-bordered">
           <tr>
             <th>Name</th>
             <th>Type</th>

@@ -14,4 +14,13 @@ class Item extends Model
         return $this->hasOne(Weapon::class);
     }
 
+    public function materials()
+    {
+        return $this->belongsToMany('App\Item',
+                                    'components',
+                                    'created_item_id',
+                                    'component_item_id'
+                                    )->withPivot('quantity', 'type');
+    }
+
 }
